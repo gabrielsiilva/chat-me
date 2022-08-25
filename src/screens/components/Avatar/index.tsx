@@ -1,9 +1,13 @@
 import React from "react";
 import { Container } from "./styles";
 
-export const Avatar = () => {
+type IAvatar = {
+  size: "small" | "large"
+}
+
+export const Avatar = ({ size }: IAvatar) => {
   return (
-    <Container>
+    <Container size={size}>
 
     </Container>
   );
